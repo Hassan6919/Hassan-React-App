@@ -1,38 +1,164 @@
-.App {
-  text-align: center;
+body {
+  transition: background-image 0.5s ease-in-out;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Light Mode */
+   /* body.light-mode {
+  background-image: linear-gradient(to right, #ffffff, #e0e0e0);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Dark Mode */
+body.dark-mode {
+  background-image: linear-gradient(to right, #000000, #2c2c2c);
+}
+
+/* Greenish Dark Mode */
+body.greenish-dark-mode {
+  background-image: linear-gradient(to right, #063200, #0a5f00);
+}
+
+/* Bluish Dark Mode */
+body.bluish-dark-mode {
+  background-image: linear-gradient(to right, #000d5b, #003366);
+}
+/* Textarea */
+textarea {
+  background-color: rgb(0,0,0 / .5);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  box-shadow: 0 0 10px #0d0d0d;
+  transition: all 0.4s ease-in-out;
+  opacity: .5;
+}
+
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 20px #220557, 0 0 30px #404585;
+  border-color: #404585;
+}
+
+/* Custom Navbar Neon Effect */
+.navbar-custom {
+  background-color: #1a1a1a;
+  border-bottom: 1px solid transparent;
+  box-shadow: 0 0 10px hsl(256, 79%, 32%);
+}
+
+.navbar-custom .navbar-brand {
+  color: #fff;
+  text-shadow: 0 0 5px rgba(255,255,255,0.6), 0 0 10px rgba(255,255,255,0.5), 
+               0 0 15px #1d0572, 0 0 20px #2e0f69;
+}
+
+.navbar-custom .navbar-brand:hover {
+  color: #9c9cc0;
+}
+
+.navbar-custom .nav-link {
+  color: #fff;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #9c9cc0;
+}
+
+/* Neon text effect for titles */
+.neon-text {
+  color: #fff;
+  text-shadow: 0 0 5px rgba(255,255,255,0.6), 0 0 10px rgba(255,255,255,0.5), 
+               0 0 15px #404585, 0 0 20px #404585, 0 0 30px #404585;
+  font-family: 'Roboto', sans-serif;
+  animation: neon-glow 1.5s infinite alternate;
+}
+
+@keyframes neon-glow {
+  from {
+      text-shadow: 0 0 5px rgba(255,255,255,0.6), 0 0 10px rgba(255,255,255,0.5), 
+                   0 0 15px #404585, 0 0 20px #404585, 0 0 30px #404585;
+  }
+  to {
+      text-shadow: 0 0 10px rgba(255,255,255,0.9), 0 0 20px rgba(255,255,255,0.7), 
+                   0 0 30px #404585, 0 0 40px #404585, 0 0 50px #404585;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Neon button effect */
+.neon-button {
+  border: 1px solid transparent;
+  color: #ffffff;
+  background-color: transparent;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-size: 1rem;
+  box-shadow: 0 0 5px #404585, 0 0 10px #404585;
+  transition: all 0.5s;
+}
+
+.neon-button:hover {
+  background-color: #404585;
+  color: #000;
+  box-shadow: 0 0 15px #404585, 0 0 20px #404585;
+}
+
+/* Custom styles for bluish-dark mode */
+.bg-bluish-dark {
+  background-color: #00274d !important;
+  color: #e0e6ed !important;
+}
+
+.navbar-bluish-dark {
+  background-color: #00274d;
+  border-bottom: 2px solid #007bff;
+}
+
+.navbar-bluish-dark .navbar-brand {
+  color: #00d4ff !important;
+}
+
+.navbar-bluish-dark .nav-link {
+  color: #e0e6ed !important;
+}
+
+.btn-bluish-dark {
+  background-color: #005a99;
+  border: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-bluish-dark:hover {
+  background-color: #007bff;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Custom styles for greenish-dark mode */
+.bg-greenish-dark {
+  background-color: #004d40 !important;
+  color: #e0f7fa !important;
+}
+
+.navbar-greenish-dark {
+  background-color: #004d40;
+  border-bottom: 2px solid #00e676;
+}
+
+.navbar-greenish-dark .navbar-brand {
+  color: #00e676 !important;
+}
+
+.navbar-greenish-dark .nav-link {
+  color: #e0f7fa !important;
+}
+
+.btn-greenish-dark {
+  background-color: #00796b;
+  border: none;
+  color: white;
+}
+
+.btn-greenish-dark:hover {
+  background-color: #00e676;
+  color: white;
 }

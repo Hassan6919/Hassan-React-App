@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/hassan-react-app/static/css/main.e31a470b.css",
+    "main.js": "/hassan-react-app/static/js/main.5a52932c.js",
+    "static/js/453.45552a5c.chunk.js": "/hassan-react-app/static/js/453.45552a5c.chunk.js",
+    "index.html": "/hassan-react-app/index.html",
+    "main.e31a470b.css.map": "/hassan-react-app/static/css/main.e31a470b.css.map",
+    "main.5a52932c.js.map": "/hassan-react-app/static/js/main.5a52932c.js.map",
+    "453.45552a5c.chunk.js.map": "/hassan-react-app/static/js/453.45552a5c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e31a470b.css",
+    "static/js/main.5a52932c.js"
+  ]
+}
